@@ -10,12 +10,12 @@
     "preview": "vite preview",
     "prepare": "husky"
   },
-  "lint-staged":{
-    "*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}":[
+  "lint-staged": {
+    "*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}": [
       "eslint --fix",
       "prettier --write"
     ],
-    "*.{json,md}":[
+    "*.{json,md}": [
       "prettier --write"
     ]
   },
