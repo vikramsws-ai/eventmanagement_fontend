@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import type { CreateEventRequest } from '../generated/sdk';
-import eventApi from '../api/eventApi';
+import Api from '../api/Api';
 import EventForm from '../components/EventForm';
 
 function EventFormContainer() {
@@ -31,7 +31,7 @@ function EventFormContainer() {
       setLoading(true);
       setMessage('');
 
-      const response = await eventApi.createEvent(eventData);
+      const response = await Api.createEvent(eventData);
 
       console.log(response.data);
       setMessage('Event created successfully!');
