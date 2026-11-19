@@ -47,7 +47,9 @@ No authorization required
 
 | Status code | Description                | Response headers |
 | ----------- | -------------------------- | ---------------- |
-| **200**     | Event created successfully | -                |
+| **201**     | Event created successfully | -                |
+| **400**     | Invalid request data       | -                |
+| **500**     | Internal server error      | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -88,5 +90,7 @@ No authorization required
 | Status code | Description                   | Response headers |
 | ----------- | ----------------------------- | ---------------- |
 | **200**     | Events retrieved successfully | -                |
+| **400**     | Bad request                   | -                |
+| **500**     | Internal server error         | -                |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
